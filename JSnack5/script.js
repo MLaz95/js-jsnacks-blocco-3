@@ -6,3 +6,7 @@ const userInput = 'nel mezzo del cammin di nostra vita';
 const words = userInput.split(' ');
 
 console.log(words)
+let output = [];
+for(i = 0; i < words.length; i++){
+    console.log(words[i][0])
+}

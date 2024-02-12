@@ -5,15 +5,21 @@
 
 const arrayLetters = ['a', 'b', 'c', 'd', 'e'];
 const arrayNumbers = [1, 2, 3, 4, 5];
+const resultElement = document.querySelector('#result');
 
-console.log(arrayLetters)
-console.log(arrayNumbers)
+resultElement.innerHTML = meld(arrayLetters, arrayNumbers)
 
-let mix = [];
-for (i = 0; i < arrayLetters.length; i++){
-    mix.push(arrayLetters[i], arrayNumbers[i])
+
+
+
+// --- FUNCTION ---
+function meld (arrayA, arrayB){
+    let mix = [];
+    for (i = 0; i < arrayA.length; i++){
+        mix.push(arrayA[i], arrayB[i])
+    }
+    return mix;
 }
 
-console.log(mix)
 
 

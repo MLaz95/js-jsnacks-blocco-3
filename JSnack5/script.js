@@ -3,12 +3,19 @@
 // e restituisca la stessa stringa ma con le iniziali delle parole tutte in maiuscolo
 
 const userInput = 'nel mezzo del cammin di nostra vita';
-const words = userInput.split(' ');
+const resultElement = document.querySelector('#result');
 
-console.log(words)
-let output = [];
-for(i = 0; i < words.length; i++){
-    output.push(words[i][0].toUpperCase() + words[i].slice(1))
+
+
+
+// --- FUNCTION ---
+function capitilize (string){
+    const words = string.split(' ');
+    let output = [];
+
+    for(i = 0; i < words.length; i++){
+        output.push(words[i][0].toUpperCase() + words[i].slice(1))
+    }
+
+    return output.join(' ');
 }
-
-console.log(output.join(' '))

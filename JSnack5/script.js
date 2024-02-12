@@ -8,5 +8,7 @@ const words = userInput.split(' ');
 console.log(words)
 let output = [];
 for(i = 0; i < words.length; i++){
-    console.log(words[i][0])
+    output.push(words[i][0].toUpperCase() + words[i].slice(1))
 }
+
+console.log(output.join(' '))

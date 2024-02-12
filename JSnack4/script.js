@@ -2,9 +2,13 @@
 // Scrivi una funzione  che accetti una stringa come parametro
 // e restituisca la stringa con i caratteri ordinati alfabeticamente
 
-const userInput = 'test';
+const inputElement = document.querySelector('#word');
+const buttonElement = document.querySelector('button');
+const resultElement = document.querySelector('#result');
 
-console.log(alphabetize(userInput))
+buttonElement.addEventListener('click', function(){
+    resultElement.innerHTML = alphabetize(inputElement.value);
+})
 
 
 // --- FUNCTION ---
